@@ -1,6 +1,8 @@
 import { createApp } from 'vue';
 import Alpine from 'alpinejs';
-import Count from './components/Count.vue';
+import '@tabler/core/dist/js/tabler.min.js';
+
+import Count from './js/components/Count.vue';
 
 window.Alpine = Alpine;
 
@@ -10,4 +12,4 @@ const app = createApp({});
 
 // register vue component here
 app.component('count', Count);
-app.mount("#app");
+app.mount('#app');

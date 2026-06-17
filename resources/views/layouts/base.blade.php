@@ -13,15 +13,14 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    @vite(['resources/css/app.css'])
+    @vite(['resources/assets/app.scss', 'resources/assets/app.js'])
 </head>
 
-<body class="font-sans text-gray-900 antialiased">
+<body>
     <div id="app">
         @yield('base_content')
     </div>
 
-    @vite(['resources/js/app.js'])
 </body>
 
 </html>
