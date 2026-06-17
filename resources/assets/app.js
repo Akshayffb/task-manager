@@ -12,4 +12,4 @@ const app = createApp({});
 
 // register vue component here
 app.component('count', Count);
-app.mount('#app');
+app.mount('#vue-app');

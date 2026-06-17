@@ -14,13 +14,16 @@
 
     <!-- Scripts -->
     @vite(['resources/assets/app.scss', 'resources/assets/app.js'])
+
+    @yield('style')
 </head>
 
-<body>
-    <div id="app">
-        @yield('base_content')
-    </div>
+<body class="full-height">
+    @yield('base_content')
 
+    <div id="vue-app">
+        @stack('vue-components')
+    </div>
 </body>
 
 </html>

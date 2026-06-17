@@ -5,8 +5,8 @@ use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('dashboard');
+})->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
