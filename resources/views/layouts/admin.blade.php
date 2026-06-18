@@ -27,7 +27,7 @@
 
             {{-- Page body --}}
             <div class="page-body">
-                <div class="container-xl">
+                <div class="container-fluid">
                     {{-- @include('partials.form-status') --}}
                 </div>
                 @yield('content')
