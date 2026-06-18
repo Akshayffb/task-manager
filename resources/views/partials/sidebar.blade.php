@@ -14,6 +14,17 @@
                         </span>
                     </a>
                 </li>
+                <li class="nav-item  {{ isActiveRoute(['team.index'], true) }}">
+                    <a class="nav-link {{ isActiveRoute(['team.index'], true, [], 'show') }}"
+                        href="{{ route('team.index') }}">
+                        <span class="nav-link-icon d-md-none d-lg-inline-block">
+                            <i class="ti ti-shirt i19 nav-link-icon"></i>
+                        </span>
+                        <span class="nav-link-title">
+                            Products
+                        </span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

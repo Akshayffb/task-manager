@@ -1,7 +1,6 @@
 @extends('layouts.base')
 @section('base_content')
     {{-- Nav bar --}}
-    {{-- @include('frontend.partials.header') --}}
 
     {{-- Page content --}}
     <div class="page-wrapper">

@@ -14,7 +14,7 @@
 
             @if (View::hasSection('breadcrumb') || View::hasSection('breadcrumb-action'))
                 <div class="page-header d-print-none">
-                    <div class="container-xl">
+                    <div class="container-fluid">
                         <div class="row g-2 align-items-center">
                             @yield('breadcrumb')
                             <div class="col-auto col-md-auto ms-auto d-print-none">
@@ -29,8 +29,8 @@
             <div class="page-body">
                 <div class="container-fluid">
                     {{-- @include('partials.form-status') --}}
+                    @yield('content')
                 </div>
-                @yield('content')
             </div>
 
             {{-- Page Footer --}}
